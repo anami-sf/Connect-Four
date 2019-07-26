@@ -1,3 +1,13 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; 
+    align-content: space-around;
+}
+
 .clearfix:after {
     display: block;
     clear: both;
@@ -11,4 +21,22 @@
     align-items: stretch; 
     align-content: space-around;
     /* flex-start, center, baseline */
+}
+
+#title {
+    font-size: 30px;
+    color: teal;
+    font-weight: bold;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(7, 10vmin);
+    grid-template-rows: repeat(6, 10vmin);
+}
+
+.cell {
+     border-radius: 50%;
+     border: 2px solid grey;
+
 }
