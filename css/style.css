@@ -1,0 +1,14 @@
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: "";   
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch; 
+    align-content: space-around;
+    /* flex-start, center, baseline */
+}
